@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="G1B-bR-c4s">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Horse-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,100 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Horse" translatesAutoresizingMaskIntoConstraints="NO" id="A2n-5S-eyD">
+                                <rect key="frame" x="200" y="28" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="XEk-iR-vND"/>
+                                    <constraint firstAttribute="width" secondItem="A2n-5S-eyD" secondAttribute="height" multiplier="1:1" id="qbG-Vi-hK4"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" editable="NO" text="The dimensions of the imageView are the same as the dimensions of the PDF - 200px x 200px." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAQ-NZ-4Zd">
+                                <rect key="frame" x="16" y="253" width="568" height="290"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CAQ-NZ-4Zd" secondAttribute="bottom" constant="8" id="2M2-5r-mwt"/>
+                            <constraint firstItem="CAQ-NZ-4Zd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2ZB-xr-FAp"/>
+                            <constraint firstItem="A2n-5S-eyD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ehf-wv-zsi"/>
+                            <constraint firstAttribute="centerX" secondItem="A2n-5S-eyD" secondAttribute="centerX" id="a9P-cD-Q22"/>
+                            <constraint firstItem="CAQ-NZ-4Zd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bqe-3F-B8g"/>
+                            <constraint firstItem="CAQ-NZ-4Zd" firstAttribute="top" secondItem="A2n-5S-eyD" secondAttribute="bottom" constant="25" id="m0C-X3-Mus"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Horse" id="og3-wG-rou"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="581" y="183"/>
+        </scene>
+        <!--Dino-->
+        <scene sceneID="O5G-5Y-dwZ">
+            <objects>
+                <viewController id="jTa-eP-cX0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c2V-hm-piT"/>
+                        <viewControllerLayoutGuide type="bottom" id="eIx-eO-aGt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pRe-Ca-t27">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dino" translatesAutoresizingMaskIntoConstraints="NO" id="nhz-Ym-0Rk">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1NB-FJ-zUL">
+                                <rect key="frame" x="16" y="28" width="568" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The imageView takes up the whole screen, yet the PDF is 114 x 89px in size. A blurry image is prevented by setting the content mode to "bottom right" - a non-scaling mode.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nhz-Ym-0Rk" secondAttribute="trailing" id="6g4-3Q-hhO"/>
+                            <constraint firstItem="eIx-eO-aGt" firstAttribute="top" secondItem="nhz-Ym-0Rk" secondAttribute="bottom" id="6xR-6z-XcY"/>
+                            <constraint firstItem="1NB-FJ-zUL" firstAttribute="top" secondItem="c2V-hm-piT" secondAttribute="bottom" constant="8" id="CdO-4R-aog"/>
+                            <constraint firstItem="1NB-FJ-zUL" firstAttribute="trailing" secondItem="pRe-Ca-t27" secondAttribute="trailingMargin" id="DlF-pq-NhR"/>
+                            <constraint firstItem="1NB-FJ-zUL" firstAttribute="leading" secondItem="pRe-Ca-t27" secondAttribute="leadingMargin" id="gRs-vi-pO0"/>
+                            <constraint firstItem="1NB-FJ-zUL" firstAttribute="height" secondItem="pRe-Ca-t27" secondAttribute="height" multiplier="0.5" id="ie7-6X-ONc"/>
+                            <constraint firstItem="nhz-Ym-0Rk" firstAttribute="leading" secondItem="pRe-Ca-t27" secondAttribute="leading" id="uok-oh-Ttr"/>
+                            <constraint firstItem="nhz-Ym-0Rk" firstAttribute="top" secondItem="c2V-hm-piT" secondAttribute="bottom" constant="-20" id="vbb-8Y-vcI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dino" id="0gc-Xv-TRP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEj-cM-1Js" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="919"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="CfC-F6-Jcc">
+            <objects>
+                <tabBarController id="G1B-bR-c4s" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1a6-P8-Wio">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Fgw-2Y-e39"/>
+                        <segue destination="jTa-eP-cX0" kind="relationship" relationship="viewControllers" id="00n-ew-Ue8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4u-P3-KvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184" y="588"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dino" width="114" height="89"/>
+        <image name="Horse" width="200" height="200"/>
+    </resources>
 </document>
