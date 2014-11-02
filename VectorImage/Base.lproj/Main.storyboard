@@ -43,7 +43,7 @@
                             <constraint firstItem="CAQ-NZ-4Zd" firstAttribute="top" secondItem="A2n-5S-eyD" secondAttribute="bottom" constant="25" id="m0C-X3-Mus"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Horse" id="og3-wG-rou"/>
+                    <tabBarItem key="tabBarItem" title="Horse" image="first" id="og3-wG-rou"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,7 +84,7 @@
                             <constraint firstItem="nhz-Ym-0Rk" firstAttribute="top" secondItem="c2V-hm-piT" secondAttribute="bottom" constant="-20" id="vbb-8Y-vcI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dino" id="0gc-Xv-TRP"/>
+                    <tabBarItem key="tabBarItem" title="Dino" image="second" id="0gc-Xv-TRP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEj-cM-1Js" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,5 +113,7 @@
     <resources>
         <image name="Dino" width="114" height="89"/>
         <image name="Horse" width="200" height="200"/>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
     </resources>
 </document>
